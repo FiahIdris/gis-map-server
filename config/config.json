@@ -19,6 +19,9 @@
     "password": "nurfiahidris",
     "database": "gis-map",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": true
+    }
   }
 }
