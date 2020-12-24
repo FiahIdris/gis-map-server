@@ -22,75 +22,9 @@ class LocationController {
 
   }
 
-  static async findAllFilterDesc(req, res, next) {
-
-    try {
-      const locations = await Location.findAll({
-        include: {
-          model: User
-        },
-        order: [
-          [ 'id', 'DESC' ],
-        ],
-      })
-
-      res.status(201).json({
-        locations
-      })
-    } catch (err) {
-
-      next(err)
-    }
-
-  }
-
-  static async findAllFilterAsc(req, res, next) {
-
-    try {
-      const locations = await Location.findAll({
-        include: {
-          model: User
-        },
-        order: [
-          [ 'id', 'ASC' ],
-        ],
-      })
-
-      res.status(201).json({
-        locations
-      })
-    } catch (err) {
-
-      next(err)
-    }
-
-  }
-  static async findOne(req, res, next) {
-
-    const name = req.params.name
-    // console.log(name)
-    try {
-      const findOne = await Location.findOne({
-        where: {
-          name: name
-        }
-      })
-      if (findOne) {
-        res.send(200).json({
-          findOne
-        })
-      }
-
-    } catch (err) {
-      next(err)
-    }
-
-  }
-
   static async create(req, res, next) {
     let data = req.body.data
 
-    // console.log(data, "====createone=====")
 
     try {
       await Location.create({
