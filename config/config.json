@@ -14,6 +14,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "DATABASE_URL",
+    "username": "gcpjtiqkyqkxcu",
+    "password": "d6d83ca6e1c63d8bfbe910dd7eda4eecef213d14c619d04c862d4bb406ee3a94",
+    "database": "d8hherjvlv3n9u",
+    "host": "postgres://gcpjtiqkyqkxcu:d6d83ca6e1c63d8bfbe910dd7eda4eecef213d14c619d04c862d4bb406ee3a94@ec2-54-160-120-28.compute-1.amazonaws.com:5432/d8hherjvlv3n9u",
+    "dialect": "postgres"
   }
 }
