@@ -2,7 +2,7 @@
   "development": {
     "username": "nurfiahidris",
     "password": "nurfiahidris",
-    "database": "inovamap-test",
+    "database": "gis-map",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
@@ -17,7 +17,7 @@
     "use_env_variable": "DATABASE_URL",
     "username": "nurfiahidris",
     "password": "nurfiahidris",
-    "database": "inovamap-test",
+    "database": "gis-map",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
