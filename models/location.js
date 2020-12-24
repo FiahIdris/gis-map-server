@@ -20,10 +20,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       validate: {
         notNull: {
-          msg: `label harus diisi`
+          msg: `label harus diisi, `
         },
         notEmpty: {
-          msg: `label harus diisi`
+          msg: `label harus diisi, `
         }
       }
     },
@@ -32,10 +32,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       validate: {
         notNull: {
-          msg: `nama kota/kab harus diisi`
+          msg: `nama kota/kab harus diisi, `
         },
         notEmpty: {
-          msg: `nama kota/kab harus diisi`
+          msg: `nama kota/kab harus diisi, `
         }
       }
     },
@@ -44,10 +44,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       validate: {
         notNull: {
-          msg: `nama profinsi harus diisi`
+          msg: `nama profinsi harus diisi, `
         },
         notEmpty: {
-          msg: `nama profinsi harus diisi`
+          msg: `nama profinsi harus diisi, `
         }
       }
     },
@@ -56,10 +56,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       validate: {
         notNull: {
-          msg: `latitude harus diisi`
+          msg: `latitude harus diisi, `
         },
         notEmpty: {
-          msg: `latitude harus diisi`
+          msg: `latitude harus diisi, `
         }
       }
     },
@@ -68,10 +68,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       validate: {
         notNull: {
-          msg: `longitude harus diisi`
+          msg: `longitude harus diisi, `
         },
         notEmpty: {
-          msg: `longitude harus diisi`
+          msg: `longitude harus diisi, `
         }
       }
     },

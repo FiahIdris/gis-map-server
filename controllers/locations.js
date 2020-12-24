@@ -68,7 +68,7 @@ class LocationController {
   static async findOne(req, res, next) {
 
     const name = req.params.name
-    console.log(name)
+    // console.log(name)
     try {
       const findOne = await Location.findOne({
         where: {
@@ -90,7 +90,7 @@ class LocationController {
   static async create(req, res, next) {
     let data = req.body.data
 
-    console.log(data, "====createone=====")
+    // console.log(data, "====createone=====")
 
     try {
       await Location.create({
@@ -119,7 +119,7 @@ class LocationController {
     const locationId = Number(req.params.id)
     const data = req.body.data.data
 
-    console.log(data)
+    // console.log(data)
 
     try {
       const location = await Location.update({
