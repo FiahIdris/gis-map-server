@@ -14,14 +14,15 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL",
+    "use_env_variable": "process.env.DATABASE_URL",
     "username": "nurfiahidris",
     "password": "nurfiahidris",
     "database": "gis-map",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "dialectOptions": {
-      "ssl": true
+      "ssl": true,
+      "rejectUnauthorized": false
     }
   }
 }
