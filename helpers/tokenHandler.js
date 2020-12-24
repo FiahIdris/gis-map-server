@@ -1,13 +1,13 @@
 const jwt = require('jsonwebtoken');
 
 function generateToken(payload) {
-  const token = jwt.sign(payload, "cogitoergosum");
+  const token = jwt.sign(payload, process.env.JWT_SECRET);
 
   return token
 }
 
 function decodeToken(token) {
-  let decoded = jwt.verify(token, "cogitoergosum");
+  let decoded = jwt.verify(token, process.env.JWT_SECRET);
   if (decoded.email == undefined) {
     decoded = decoded
   } else {
